@@ -4,7 +4,7 @@
   "description": "basic sites just to practise React with Vite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gits": "git switch main && git merge secondary && git push && git switch secondary"
   },
   "repository": {
     "type": "git",
