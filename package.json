@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SlyCooper-n/practising_react/issues"
   },
-  "homepage": "https://github.com/SlyCooper-n/practising_react#readme"
+  "homepage": "https://github.com/SlyCooper-n/practising_react#readme",
+  "dependencies": {
+    "react-icons": "^4.3.1"
+  }
 }
