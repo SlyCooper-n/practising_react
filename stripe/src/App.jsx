@@ -1,7 +1,16 @@
+import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Hero from "./components/Hero";
+import Submenu from "./components/Submenu";
+
 function App() {
   return (
-    <div className="">
-      <header className=""></header>
+    <div className="min-h-screen">
+      <Navbar />
+      <Sidebar />
+      <Hero />
+      <Submenu />
     </div>
   );
 }
