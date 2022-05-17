@@ -1,4 +1,3 @@
-import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Hero from "./components/Hero";
