@@ -1,6 +1,11 @@
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import { useGlobalContext } from "../../../context";
 
 export function CartItem({ product }) {
+  const {
+    reducer: { toggleAmount, remove },
+  } = useGlobalContext();
+
   return (
     <li id={product.id} className="h-24 my-12 flex items-center text-lg">
       <img
@@ -16,19 +21,22 @@ export function CartItem({ product }) {
           <p className="text-neutral-500">${product.price}</p>
         </div>
 
-        <button className="w-fit text-sky-500 font-semibold tracking-widest">
+        <button
+          onClick={() => remove(product.id)}
+          className="w-fit text-sky-500 font-semibold tracking-widest"
+        >
           Remove
         </button>
       </div>
 
       <div className="h-full flex flex-col justify-between items-center">
-        <button>
+        <button onClick={() => toggleAmount(product.id, "add")}>
           <FaChevronUp className="text-sky-500" />
         </button>
 
         <span>{product.amount}</span>
 
-        <button>
+        <button onClick={() => toggleAmount(product.id, "rem")}>
           <FaChevronDown className="text-sky-500" />
         </button>
       </div>
