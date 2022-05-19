@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 const AppContext = React.createContext(null);
 
 export function AppProvider({ children }) {
-  <AppContext.Provider>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={0}>{children}</AppContext.Provider>;
 }
 
 export function useGlobalContext() {
