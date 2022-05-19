@@ -4,15 +4,17 @@ export default function () {
       <div className="container mx-auto px-1 flex justify-between items-center">
         <h1 className="text-3xl font-mono">TheCocktailDB</h1>
 
-        <ul className="flex gap-8">
-          <li>
-            <a href="#">Home</a>
-          </li>
+        <nav>
+          <ul className="flex gap-8">
+            <li>
+              <a href="#">Home</a>
+            </li>
 
-          <li>
-            <a href="#">About</a>
-          </li>
-        </ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
