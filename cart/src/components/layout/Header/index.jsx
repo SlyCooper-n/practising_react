@@ -1,8 +1,8 @@
 import { FaShoppingBag } from "react-icons/fa";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../../context";
 
 export default function Header() {
-  const { amount } = useGlobalContext();
+  const { products } = useGlobalContext();
 
   return (
     <header className="w-full py-4 bg-sky-700 text-white font-semibold">
@@ -11,7 +11,7 @@ export default function Header() {
 
         <div className="relative">
           <span className="absolute -right-2 w-6 aspect-square text-center bg-sky-400 rounded-full">
-            {amount}
+            {products.length}
           </span>
 
           <FaShoppingBag className="text-4xl" />
